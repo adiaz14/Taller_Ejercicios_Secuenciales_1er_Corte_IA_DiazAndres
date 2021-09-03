@@ -277,7 +277,19 @@ print(f'Costo del Iva del 12%: ${iva:,}\n')
 print(f'Costo total del tour es (costo + Iva): ${costo_total:,}\n')
 
 
+# 14. Un Hotel 5 Estrellas de Santa Marta tiene una promoción para sus
+# clientes. Cobra por una habitación $100.000 el primer día y por el
+# resto $200.000 por día. Realice un algoritmo que determine el valor
+# total a pagar por la habitación si la estadía fue de varios días.
 
+print('\n--- COTIZACIÓN DE HABITACIÓN EN HOTEL 5 ESTRELLAS EN STA MARTA ---\n')
+dias = int(input('Digite cantidad de días de estadía (mayor a 0 días): '))
+precio_estadia = (100000) + (200000 * (dias - 1))
+
+print('\n-------------- RESUMEN DE BONO DEL TRABAJADOR --------------\n')
+
+print(f'El precio de {dias} días de estadía en la habitación del hotel es de '
+      f': ${precio_estadia:,}\n')
 
 
 
