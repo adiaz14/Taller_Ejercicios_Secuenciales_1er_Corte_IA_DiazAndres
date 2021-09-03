@@ -2,7 +2,7 @@
 """
 Created on Thu Sep  2 22:48:51 2021
 
-@author: USER
+@author: Andrés Díaz Ortega
 """
 
 # Calcule el valor de Y indicando paso a paso como llegó al resultado
@@ -314,5 +314,3 @@ print(f'Monto del interés mensual (prestamo * 24% / 24 meses): ${interes:,}\n')
 print(f'Monto de las cuotas especiales: ${cuota_especial:,}\n')
 print(f'Monto de las cuotas ordinarias: ${cuota_ordinaria:,}\n')
 print(f'Monto total a pagar por el prestamo: ${total_prestamo:,}\n')
-
-
