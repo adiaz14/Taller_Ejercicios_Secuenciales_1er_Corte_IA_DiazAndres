@@ -144,6 +144,20 @@ print(f'Costo de {num_colores} colores es:     ${costo_num_colores:,}\n')
 print('-------------------------------------------')
 print(f'Costo total de la cotización: ${costo_total:,}\n')
 
+# 7. Una empresa paga a sus empleados un bono por antigüedad que
+# consiste en $100.000 por el primer año laboral y $120.000 por cada
+# año siguiente. Realice un algoritmo que determine el monto del bono
+# a pagar a un trabajador que tiene varios años en la empresa.
+
+print('---------- DATOS PARA LA LIQUIDACIÓN DE BONO LABORAL ----------\n')
+antiguedad = int(input('Digite antigüedad (mayor a 0 años): '))
+bono = (100000) + (120000 * (antiguedad - 1))
+
+print('\n-------------- RESUMEN DE BONO DEL TRABAJADOR --------------\n')
+
+print(f'Debido al servicio de {antiguedad} años, al trabajador se le otorga '
+      f'un bono por: ${bono:,}\n')
+
 
 
 
