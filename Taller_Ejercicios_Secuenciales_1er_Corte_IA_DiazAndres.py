@@ -120,7 +120,29 @@ print(f'Total descuentos       : ${des_total:,}\n')
 print('-------------------------------------------')
 print(f'Total devengado con descuento  : ${total_devengado:,}\n')
 
+# 6. El periódico el Informador cobra por un aviso clasificado un monto
+# que depende del número de palabras, tamaño en cetímetros y
+# número de colores. Cada palabra tiene un costo de $20.000, cada
+# centímetro tiene un costo de $15.000 y cada color tiene un costo de
+# $25.000. Realice un algoritmo que determine el monto a pagar por un
+# aviso clasificado.
 
+print('\n-------------- DATOS INICIALES DE LA COTIZACIÓN --------------\n')
+num_palabras = int(input('Digite número de palabras: '))
+tamanio = float(input('Digite tamaño en centimetros: '))
+num_colores = int(input('Digite número de colores: '))
+costo_num_palabras = num_palabras * 20000
+costo_tamanio = tamanio * 15000
+costo_num_colores = num_colores * 25000
+costo_total = costo_num_palabras + costo_tamanio + costo_num_colores
+
+print('\n-------------- PERIODICO EL INFORMADOR --------------\n')
+print('-------------- Resumen de cotización de aviso --------------\n')
+print(f'Costo de {num_palabras} palabras es:   ${costo_num_palabras:,}\n')
+print(f'Costo de {tamanio} cm es:         ${costo_tamanio:,}\n')
+print(f'Costo de {num_colores} colores es:     ${costo_num_colores:,}\n')
+print('-------------------------------------------')
+print(f'Costo total de la cotización: ${costo_total:,}\n')
 
 
 
