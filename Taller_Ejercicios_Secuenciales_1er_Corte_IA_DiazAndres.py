@@ -258,7 +258,23 @@ print(f'La cantidad total de DVD alquilados es {num_dvd}, uno de estos es '
 print(f'El valor del alquiler de los {num_dvd} DVDs por {dias} días '
       f'es: ${valor_alquiler:,}\n')
 
+# 13. Una Agencia de viajes cobra por un Tour a Cartagena $25.000
+# diarios por persona. Realice un algoritmo que determine el monto a
+# pagar por una familia que desee realizar dicho Tour sabiendo que
+# también cobran el 12% de IVA.
 
+print('\n----- DATOS PARA LA COTIZACIÓN DE TOUR POR CARTAGENA ---------\n')
+num_personas = int(input('Digite cantidad de personas: '))
+dias = int(input('Digite cantidad de días para el tour: '))
+costo_tour = num_personas * dias * 25000
+iva = costo_tour * 0.12
+costo_total = costo_tour + iva
+
+print('\n--------- RESUMEN DE COTIZACIÓN DE TOUR EN CARTAGENA ---------\n')
+print(f'El costo antes de Iva por {dias} días para una familia de '
+      f'{num_personas} personas es: ${costo_tour:,}\n')
+print(f'Costo del Iva del 12%: ${iva:,}\n')
+print(f'Costo total del tour es (costo + Iva): ${costo_total:,}\n')
 
 
 
