@@ -158,8 +158,23 @@ print('\n-------------- RESUMEN DE BONO DEL TRABAJADOR --------------\n')
 print(f'Debido al servicio de {antiguedad} años, al trabajador se le otorga '
       f'un bono por: ${bono:,}\n')
 
+# 8. Una Universidad le paga a sus profesores $20.000 la hora y le hace
+# un descuento del 5% por concepto de caja de ahorro. Determine el
+# monto del descuento y el monto total a pagar al profesor.
 
+print('\n-------------- DATOS DE LA JORNADA DEL PROFESOR --------------\n')
+horas = float(input('Digite horas trabajadas por el profesor: '))
+salario_bruto = horas * 20000
+descuento = salario_bruto * 0.05
+salario_neto = salario_bruto - descuento
 
+print('\n-------------- RESUMEN SALARIAL DEL TRABAJADOR --------------\n')
+
+print(f'El salario bruto del profesor por {horas} horas laboradas es:,'
+      f' ${salario_bruto:,}\n')
+print(f'El descuento salarial del profesor es: ${descuento:,}\n')
+print(f'El salario neto (con descuento) del profesor por {horas} horas '
+      f'laboradas es: ${salario_neto:,}\n')
 
 
 
