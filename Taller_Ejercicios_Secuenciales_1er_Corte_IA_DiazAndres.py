@@ -241,8 +241,22 @@ print(f'Monto presupuestal asignado a ginecología: ${ginecologia:,}\n')
 print(f'Monto presupuestal asignado a Traumatología: ${Traumatologia:,}\n')
 print(f'Monto presupuestal asignado a Pediatría: ${pediatria:,}\n')
 
+# 12. Una video tienda alquila DVD a $1.500 el día. Tiene una promoción
+# que consiste en dejar gratis el alquiler de una película. Realice un
+# algoritmo que teniendo como dato de entrada el total de películas
+# alquiladas, y el número de días de alquiler, determine el monto a
+# pagar.
 
+print('\n----- DATOS PARA EL CÁLCULO DEL ALQUILER DE DVD ---------\n')
+num_dvd = int(input('Digite cantidad de DVD alquilados: '))
+dias = int(input('Digite la cantidad de días de alquiler: '))
+valor_alquiler = (num_dvd - 1) * dias * 1500
 
+print('\n----------- RESUMEN VALOR DE ALQUILER DE DVD -----------\n')
+print(f'La cantidad total de DVD alquilados es {num_dvd}, uno de estos es '
+      f'gratis, por lo que se cobra el equivalente a {num_dvd-1} DVDs \n')
+print(f'El valor del alquiler de los {num_dvd} DVDs por {dias} días '
+      f'es: ${valor_alquiler:,}\n')
 
 
 
