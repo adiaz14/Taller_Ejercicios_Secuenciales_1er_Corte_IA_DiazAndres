@@ -291,6 +291,28 @@ print('\n-------------- RESUMEN DE BONO DEL TRABAJADOR --------------\n')
 print(f'El precio de {dias} días de estadía en la habitación del hotel es de '
       f': ${precio_estadia:,}\n')
 
+# 15. El banco del Pueblo da microcréditos a empresarios para ser
+# cancelados en un lapso de 2 años (24 meses). Al monto del
+# préstamo se le cobra un interés del 24%. El empresario debe pagar
+# la mitad del préstamo en 4 cuotas especiales y la otra mitad en 20
+# cuotas ordinarias. Realice un algoritmo que teniendo como dato de
+# entrada el monto del préstamo, determine el monto total a pagar por
+# el préstamo, el monto de las cuotas especiales y el monto de las
+# cuotas ordinarias.
 
+print('\n--- BANCO DEL PUEBLO (ESTUDIO DE MICROCRÉDITOS A EMPRESARIOS) ---\n')
+monto_prestamo = float(input('Digite monto del prestamo: '))
+interes = (monto_prestamo * 0.24) / 24
+cuota_especial = (monto_prestamo / 8) + (interes)
+cuota_ordinaria = (monto_prestamo / 40) + (interes)
+total_prestamo = (cuota_especial * 4) + (cuota_ordinaria * 20)
+
+print('\n-------- RESUMEN ESTUDIO DE MICROCRÉDITOS A EMPRESARIOS --------\n')
+
+print(f'Monto prestado: ${monto_prestamo:,}\n')
+print(f'Monto del interés mensual (prestamo * 24% / 24 meses): ${interes:,}\n')
+print(f'Monto de las cuotas especiales: ${cuota_especial:,}\n')
+print(f'Monto de las cuotas ordinarias: ${cuota_ordinaria:,}\n')
+print(f'Monto total a pagar por el prestamo: ${total_prestamo:,}\n')
 
 
