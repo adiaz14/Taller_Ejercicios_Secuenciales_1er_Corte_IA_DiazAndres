@@ -176,7 +176,23 @@ print(f'El descuento salarial del profesor es: ${descuento:,}\n')
 print(f'El salario neto (con descuento) del profesor por {horas} horas '
       f'laboradas es: ${salario_neto:,}\n')
 
+# 9. Un centro de comunicaciones alquilan tarjetas para realizar llamadas
+# y cobran el monto consumido de la tarjeta mas un recargo del 20%.
+# Teniendo como dato de entrada el monto inicial y el monto final de la
+# tarjeta, determine el costo de la llamada.
 
+print('\n--------- DATOS DEL ALQUILER DE TARJETAS DE LLAMADA ---------\n')
+monto_inicial = float(input('Digite monto inicial de la tarjeta: '))
+monto_final = float(input('Digite monto final de la tarjeta: '))
+
+consumo_tarjeta = monto_inicial - monto_final
+recargo_consumo = consumo_tarjeta * 0.2
+costo_total = consumo_tarjeta + recargo_consumo
+
+print('\n-------------- RESUMEN DEL COSTO DE LA LLAMADA  --------------\n')
+print(f'Valor consumido de la tarjeta: ${consumo_tarjeta:,}\n')
+print(f'Valor del recargo del 20%: ${recargo_consumo:,}\n')
+print(f'Total costo de la llamada (consumo + recargo): ${costo_total:,}\n')
 
 
 
