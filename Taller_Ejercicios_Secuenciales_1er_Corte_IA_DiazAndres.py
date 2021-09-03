@@ -82,8 +82,16 @@ print('----- Datos tercera persona -----')
 print(f'Valor de la inversión: ${inversion_persona3:,}')
 print(f'Porcentaje de participacion: {porcentaje_persona3}%')
 
+# 4. Un banco da a sus ahorradores un interes de 1.5% sobre el monto
+# ahorrado. Teniendo como dato de entrada el saldo inicial del
+# ahorrador determine el saldo final.
 
-
+print('\n-------------- DATOS PARA AHORROS BANCARIOS --------------\n')
+saldo_inicial = float(input('Digite el saldo inicial del cliente: '))
+saldo_final = saldo_inicial * 1.015
+print('----- RESUMEN DE DATOS DE AHORRO DEL CLIENTE -----\n')
+print(f'Saldo inicial del cliente es: ${saldo_inicial:,}')
+print(f'Saldo final del cliente es: ${saldo_final:,}')
 
 
 
