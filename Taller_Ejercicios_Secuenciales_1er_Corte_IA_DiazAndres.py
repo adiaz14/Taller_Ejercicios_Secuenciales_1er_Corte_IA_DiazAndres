@@ -93,6 +93,33 @@ print('----- RESUMEN DE DATOS DE AHORRO DEL CLIENTE -----\n')
 print(f'Saldo inicial del cliente es: ${saldo_inicial:,}')
 print(f'Saldo final del cliente es: ${saldo_final:,}')
 
+# 5. Una empresa le hace los siguientes descuentos sobre el sueldo base
+# a sus trabajadores: 1% por ley de politica pública, 4% por seguro
+# social, 0.5% por seguro forzoso y 5% por caja de ahorro. Realice un
+# algoritmo que determine el monto de cada descuento y el monto total
+# a pagar al trabajador.
+
+print('-------------- DESCUENTOS SALARIALES --------------\n')
+salario = float(input('Digite el salario del trabajador: '))
+des_politica_pub = salario * 0.01
+des_seg_social = salario * 0.04
+des_seg_forzoso = salario * 0.005
+des_caja_ahorro = salario * 0.05
+des_total = des_politica_pub+des_seg_social+des_seg_forzoso+des_caja_ahorro
+total_devengado = salario - des_total
+
+print('\n----- Resumen salarial de descuentos del trabajador -----\n')
+print('----- Salario base -----\n')
+print(f'Salario del trabajador: ${salario:,}\n')
+print('------ Descuentos ------\n')
+print(f'Politica pública (1.0%): ${des_politica_pub:,}')
+print(f'Seguro social    (4.0%): ${des_seg_social:,}')
+print(f'Seguro forzoso   (0.5%): ${des_seg_forzoso:,}')
+print(f'Caja de ahorro   (5.0%): ${des_caja_ahorro:,}')
+print(f'Total descuentos       : ${des_total:,}\n')
+print('-------------------------------------------')
+print(f'Total devengado con descuento  : ${total_devengado:,}\n')
+
 
 
 
