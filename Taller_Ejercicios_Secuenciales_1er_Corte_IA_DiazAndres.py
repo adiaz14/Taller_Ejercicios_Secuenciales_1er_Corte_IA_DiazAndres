@@ -210,7 +210,36 @@ print(f'Costo de revelado de {num_rollos} rollos: ${costo_rollos:,}\n')
 print(f'Costo del Iva del 16%: ${iva:,}\n')
 print(f'Costo total del revelado de rollos (costo + Iva): ${costo_total:,}\n')
 
+# 11. . En un hospital existen tres áreas: Ginecología, Pediatría y
+# Traumatología. El presupuesto anual del hospital se reparte
+# conforme a la siguiente tabla:
 
+"""
+--------------------------------------------
+|      AREA       | Porcentaje presupuestal |
+--------------------------------------------
+|  Ginecología    |          40%            |
+--------------------------------------------
+|  Traumatología  |          30%            |
+--------------------------------------------
+|  Pediatría      |          30%            |
+--------------------------------------------
+"""
+
+# Obtener la cantidad de dinero que recibirá cada área, para cualquier
+# monto presupuestal.
+
+print('\n----- DATOS PARA EL CÁLCULO PRESUPUESTAL HOSPITALARIO  ---------\n')
+monto_presupuesto = float(input('Digite monto presupuestal: '))
+ginecologia = monto_presupuesto * 0.4
+Traumatologia = monto_presupuesto * 0.3
+pediatria = monto_presupuesto * 0.3
+
+print('\n----------- RESUMEN PRESUPUESTAL DEL HOSPITAL -----------\n')
+print(f'Monto presupuestal hospitalario: ${monto_presupuesto:,}\n')
+print(f'Monto presupuestal asignado a ginecología: ${ginecologia:,}\n')
+print(f'Monto presupuestal asignado a Traumatología: ${Traumatologia:,}\n')
+print(f'Monto presupuestal asignado a Pediatría: ${pediatria:,}\n')
 
 
 
