@@ -200,13 +200,13 @@ print(f'Total costo de la llamada (consumo + recargo): ${costo_total:,}\n')
 # (16%).
 
 print('\n--------- DATOS DEL REVELADO DE ROLLOS  ---------\n')
-num_rollos = int(input('Digite número de rollos revelados: '))
-costo_rollos = num_rollos * 1500
-iva = costo_rollos * 0.16
-costo_total = costo_rollos + iva
+num_fotos = int(input('Digite número de fotos en el rollo a revelar: '))
+costo_fotos = num_fotos * 1500
+iva = costo_fotos * 0.16
+costo_total = costo_fotos + iva
 
 print('\n----------- RESUMEN DEL COSTO DE REVELADO DE ROLLOS -----------\n')
-print(f'Costo de revelado de {num_rollos} rollos: ${costo_rollos:,}\n')
+print(f'Costo de revelado de {num_fotos} fotos: ${costo_fotos:,}\n')
 print(f'Costo del Iva del 16%: ${iva:,}\n')
 print(f'Costo total del revelado de rollos (costo + Iva): ${costo_total:,}\n')
 
